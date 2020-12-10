@@ -87,6 +87,8 @@ public class Telefono implements Serializable {
 	public void setTipo_tel(TipoTelefono tipo_tel) {
 		this.tipo_tel = tipo_tel;
 	}
+	
+	
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;

@@ -69,42 +69,5 @@ public class Operadoras implements Serializable {
 		return serialVersionUID;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((listaTelOpe == null) ? 0 : listaTelOpe.hashCode());
-		result = prime * result + opeCod;
-		result = prime * result + ((opeNombre == null) ? 0 : opeNombre.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Operadoras other = (Operadoras) obj;
-		if (listaTelOpe == null) {
-			if (other.listaTelOpe != null)
-				return false;
-		} else if (!listaTelOpe.equals(other.listaTelOpe))
-			return false;
-		if (opeCod != other.opeCod)
-			return false;
-		if (opeNombre == null) {
-			if (other.opeNombre != null)
-				return false;
-		} else if (!opeNombre.equals(other.opeNombre))
-			return false;
-		return true;
-	}
-
-	@Override
-	public String toString() {
-		return "Operadoras [opeCod=" + opeCod + ", opeNombre=" + opeNombre + ", listaTelOpe=" + listaTelOpe + "]";
-	}
+	
 }

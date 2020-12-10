@@ -1,6 +1,7 @@
 package ups.edu.ec.JPA;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -16,7 +17,7 @@ public class JPAGenericDao <T, ID> implements GenericDAO<T, ID> {
 
 	    public JPAGenericDao(Class<T> persistentClass) {
 			this.persistentClass = persistentClass;
-			this.em = Persistence.createEntityManagerFactory("jpa").createEntityManager();
+			this.em = Persistence.createEntityManagerFactory("BarreraBarrera-Katherine-Examen").createEntityManager();
 	    }
 
 		@Override

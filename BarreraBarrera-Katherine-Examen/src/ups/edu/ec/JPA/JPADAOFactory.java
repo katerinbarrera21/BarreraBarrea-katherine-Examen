@@ -1,18 +1,13 @@
 package ups.edu.ec.JPA;
 
 import ups.edu.ec.DAO.DAOFactory;
+
 import ups.edu.ec.DAO.OperadorasDAO;
 import ups.edu.ec.DAO.TelefonoDAO;
 import ups.edu.ec.DAO.TipoTelefonoDAO;
 import ups.edu.ec.DAO.UsuarioDAO;
 
-public class JPADAOFactory extends DAOFactory{
-
-	@Override
-	public OperadorasDAO getOperadorasDao() {
-		// TODO Auto-generated method stub
-		return new JPAOperadorasDAO();
-	}
+public class  JPADAOFactory extends DAOFactory{
 
 	@Override
 	public UsuarioDAO getUsuarioDAO() {
@@ -29,7 +24,13 @@ public class JPADAOFactory extends DAOFactory{
 	@Override
 	public TelefonoDAO getTelefonoDAO() {
 		// TODO Auto-generated method stub
-		return  new JPATelefonoDAO();
+		return new JPATelefonoDAO();
+	}
+
+	@Override
+	public OperadorasDAO getOperadorasDao() {
+		// TODO Auto-generated method stub
+		return new JPAOperadorasDAO();
 	}
 
 }

@@ -10,12 +10,12 @@ public abstract class DAOFactory {
 		return factory;
 	}
 	
-	public abstract OperadorasDAO getOperadorasDao();
-	
 	public abstract UsuarioDAO getUsuarioDAO();
 	
 	public abstract TipoTelefonoDAO getTipoTelefonoDAO();
 	
 	public abstract TelefonoDAO getTelefonoDAO();
+
+	public abstract OperadorasDAO getOperadorasDao();
 	
 }

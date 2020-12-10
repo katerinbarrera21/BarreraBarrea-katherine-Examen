@@ -143,6 +143,8 @@ public class Usuario implements Serializable {
 	public void setListaTelUsu(List<Telefono> listaTelUsu) {
 		this.listaTelUsu = listaTelUsu;
 	}
+	
+	
 
 
 
@@ -225,7 +227,9 @@ public class Usuario implements Serializable {
 		return "Usuario [cod_usu=" + cod_usu + ", cedula=" + cedula + ", nombre=" + nombre + ", apellido=" + apellido
 				+ ", correo=" + correo + ", contrasena=" + contrasena + ", listaTelUsu=" + listaTelUsu + "]";
 	}
-	
+
+
+
 	
 	
 }
